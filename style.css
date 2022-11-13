@@ -1,0 +1,55 @@
+body {
+    /*box-sizing: border-box;*/
+    background-color: white;
+}
+
+button {
+    /* color */
+    background-color: black;
+    color: white;
+
+    /* dimensions*/
+    height: 20%;
+    width: 20%;
+    padding: 15px 15px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition-duration: 0.5s;
+}
+
+/* calculator body */
+#calculator-body {
+    border: 5px solid black;
+    height: 400px;
+    width: 400px;
+    padding: 5px;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+
+    /* center */
+    margin: 0 auto;
+
+    /* transparency */ 
+    opacity: 0.8;
+}
+
+/* calculator screen */
+#calculator-screen {
+    border: 1px solid blue;
+    height: 25%;
+    width: 100%;
+
+    color: black;
+}
+
+/* buttons */
+#calculator-button-layout {
+    border: 1px solid red;
+    height: 75%;
+    width: 100%;
+    padding: 5px;
+    color: black;
+}
