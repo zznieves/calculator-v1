@@ -1,56 +1,73 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Calculator 1.0</title>
-        <!-- Link to stylesheet -->
-        <link href="./style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="calculator-body">
-            <div id="calculator-screen">
-                <p>Screen</p>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Calculator</title>
+    <meta name="description" content="Calculator">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Calculator">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://calculator.lan/index.html/">
+    <meta property="og:description" content="Calculator">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div id="calculator-body">
+        <div id="calculator-screen">
+            <input type="text" id="mainInput" name="mainInput"  value="">
+            <p id="inputPreview"></p>
+            <p id="output"></p>
+            <p id="calculatedOutput"></p>
+            <ul id="history"></ul>
+        </div>
+        <div id="calculator-button-layout">
+            <div class="buttons">
+                <!-- Row 1 -->
+                <button class="button nonNumberButton">CE</button>
+                <button class="button" id="clearButton">C</button>
+                <button class="button nonNumberButton"><span>&#9003;</span></button>
+                <button class="button nonNumberButton"><span>&#247;</span></button>
             </div>
-            <div id="calculator-button-layout">
-                <div class="buttons">
-                    <!-- Row 1 -->
-                    <button>CE</button>
-                    <button>C</button>
-                    <button><span>&#9003;</span></button>
-                    <button><span>&#247;</span></button>
-                </div>
 
-                <div class="buttons">
-                    <!-- Row 2 -->
-                    <button class="innerButton">7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>x</button>
-                </div>
+            <div class="buttons">
+                <!-- Row 2 -->
+                <button class="button numberButton innerButton">7</button>
+                <button class="button numberButton">8</button>
+                <button class="button numberButton">9</button>
+                <button class="button nonNumberButton">x</button>
+            </div>
 
-                <div class="buttons">
-                    <!-- Row 3 -->
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>-</button>
-                </div>
+            <div class="buttons">
+                <!-- Row 3 -->
+                <button class="button numberButton">4</button>
+                <button class="button numberButton">5</button>
+                <button class="button numberButton">6</button>
+                <button class="button nonNumberButton">-</button>
+            </div>
 
-                <div class="buttons">
-                    <!-- Row 4 -->
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>+</button>
-                </div>
+            <div class="buttons">
+                <!-- Row 4 -->
+                <button class="button numberButton">1</button>
+                <button class="button numberButton">2</button>
+                <button class="button numberButton">3</button>
+                <button class="button nonNumberButton">+</button>
+            </div>
 
-                <div class="buttons">
-                    <!-- Row 5 -->
-                    <button>+/-</button>
-                    <button>0</button>
-                    <button>.</button>
-                    <button>=</button>
-                </div>
+            <div class="buttons">
+                <!-- Row 5 -->
+                <button class="button">+/-</button>
+                <button class="button numberButton">0</button>
+                <button class="button nonNumberButton">.</button>
+                <button class="button" id="submitButton">=</button>
             </div>
         </div>
-    </body>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
